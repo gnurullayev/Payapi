@@ -1,0 +1,142 @@
+.footer {
+    min-height: 100%;
+    background-image: url(../../img/section-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 700px) -200px;
+    background-color: #1b262f;
+
+    &__inner {
+        width: 100%;
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 135px;
+    }
+    
+    &__content {
+        width: 100%;
+        max-width: 911px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item + &__item {
+        margin-left: 40px;
+    }
+
+    &__link {
+        line-height: 18px;
+        color: $link-color;
+        text-decoration: none;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+        transition: all .4s linear ;
+    }
+
+    &__link:hover {
+        opacity: 1;
+        transition: all .4s linear ;
+    }  
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+
+    &__item + &__item {
+        margin-left: 24px;
+    }
+
+    &__icon path{
+        transition: fill .4s linear;
+    }
+
+    &__icon:hover path {
+        fill: #da6d97;
+    }
+}
+
+@include breackpoint-down(570px) {
+    .footer {
+        padding-top: 41px;
+        padding-bottom: 55px;
+        background-position: calc(50% + 700px) -200px;
+    
+        &__inner {
+            width: 100%;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__logo {
+            margin-bottom: 40px;
+        }
+        
+        &__content {
+            width: 100%;
+            max-width: 911px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 41px;
+        }
+    
+        &__item + &__item {
+            margin-left: 0px;
+            margin-top: 31px;
+        }
+    
+        &__link {
+            line-height: 18px;
+            color: $link-color;
+            text-decoration: none;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            transition: all .4s linear ;
+        }
+    
+        &__link:hover {
+            opacity: 1;
+            transition: all .4s linear ;
+        }  
+    }
+    
+    .social-networks {
+        display: flex;
+        align-items: center;
+        padding-top: 7px;
+    
+        &__item + &__item {
+            margin-left: 24px;
+        }
+    
+        &__icon path{
+            transition: fill .4s linear;
+        }
+    
+        &__icon:hover path {
+            fill: #da6d97;
+        }
+    }
+    
+}

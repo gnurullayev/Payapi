@@ -1,0 +1,13 @@
+@mixin button($width,$backcolor){
+    width: $width;
+    border: none;
+    outline: none;
+    background-color: $backcolor;
+    cursor: pointer;
+}
+
+@mixin breackpoint-down ($screen-width) {
+    @media only screen and(max-width: $screen-width) {
+        @content
+    }
+}

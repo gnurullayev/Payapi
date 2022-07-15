@@ -1,0 +1,32 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: $font-publik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: $link-color;
+    background-color: #edf3f8;
+    background-image: url(../img/section-bg-img.png);
+    background-position: calc(50% + 450px) -172px;
+    background-repeat: no-repeat;
+}
+
+img {
+    vertical-align: middle;
+}
+
+@include breackpoint-down(900px)  {
+    body {
+      
+        background-image: url(../img/section-img-md.png);
+        background-position: calc(50%) -550px;
+    }
+}

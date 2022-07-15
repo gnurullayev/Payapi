@@ -1,0 +1,206 @@
+.hero {
+    padding-bottom: 75px;
+
+    &__inner {
+        width: 100%;
+        max-width: 1017px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 74px;
+    }
+
+    &__img {
+        border-radius: 35px;
+        margin-bottom: 48px;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 546px;
+        padding-top: 78px;
+    }
+
+    &__title {
+        margin-bottom: 21px;
+        font-family: $font-display;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.553846px;
+        color: #36536B;
+    }
+
+    &__question {
+        margin-left: 27px;
+        line-height: 18px;
+        color: #6C8294;
+    }
+
+    &__question--link {
+        line-height: 18px;
+        color: #6C8294;
+        text-decoration: none;
+    }
+
+}
+
+.form {
+    width: 100%;
+    max-width: 445px;
+    min-height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-left: 27px;
+    background-color: $link-color;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+
+    &__input {
+        border: none;
+        outline: none;
+        color: $title-color;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        background-color: transparent;
+    }
+}
+
+.form__btn:hover {
+    transition: background-color .4s linear;
+    @include button(173px,#DA6D97);
+}
+
+@include breackpoint-down(900px) {
+    .hero {
+        padding-bottom: 99px;
+        &__inner {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 48px;
+    
+        }
+
+        &__img {
+            border-radius: 35px;
+            margin-bottom: 48px;
+        }
+    
+        &__content {
+            max-width: 573px;
+            padding-top: 48px;
+            text-align: center;
+        }
+    
+        &__title {
+            width: 100%;
+            max-width: 570px;
+            margin-bottom: 22px;
+            font-size: 48px;
+            line-height: 56px;
+            text-align: center;
+        }
+       
+        &__question {
+            margin-left: 27px;
+            line-height: 18px;
+            color: #6C8294;
+        }
+    
+        &__question--link {
+            line-height: 18px;
+            color: #6C8294;
+            text-decoration: none;
+        }
+    
+    }
+
+    .form {
+        margin: 0 auto;
+        margin-bottom: 16px;
+        padding-left: 27px;
+        text-align: center;
+    
+        &__input {
+            border: none;
+            outline: none;
+            color: $title-color;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            background-color: transparent;
+        }
+    }
+}
+
+
+
+@include breackpoint-down(570px) {
+    .hero {
+        min-height: 78px;
+        padding-bottom: 79px;
+
+        &__inner {
+            padding-top: 32px;
+        }
+
+        &__img {
+            margin-bottom: 24px;
+        }
+    
+        &__content {
+            max-width: 327px;
+            padding-top: 0px;
+        }
+    
+        &__title {
+            max-width: 5327px;
+            margin-bottom: 24px;
+            font-size: 32px;
+            line-height: 36px;
+        }
+        
+        &__question {
+            margin-left: 27px;
+            line-height: 17px;
+            color: #6C8294;
+        }
+    
+        &__question--link {
+            line-height: 17px;
+            color: #6C8294;
+            text-decoration: none;
+        }
+    
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 16px;
+        padding-left: 0;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+    
+        &__input {
+            width: 100%;
+            max-width: 327px;
+            min-height: 48px;
+            margin-bottom: 16px;
+            padding-left: 27px;
+            background-color: $link-color;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+        }
+    
+        &__btn {
+            width: 100%;
+            max-width: 327px;
+            margin-bottom: 24px;
+        }
+    }
+}
+

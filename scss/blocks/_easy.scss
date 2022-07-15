@@ -1,0 +1,158 @@
+.easy {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background-image: url(../../img/section-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 720px) 370px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item:first-child {
+        width: 100%;
+        max-width: 1015px;
+        margin-bottom: 120px;
+    }
+
+    &__item:last-child {
+        width: 100%;
+        max-width: 1106px;
+        flex-direction: row-reverse;
+    }
+
+    &__img-implement {
+        width: 320px;
+        height: 284px;
+        object-fit: cover;
+    }
+    
+    &__img-phones {
+        width: 530px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    &__item-content {
+        width: 100%;
+        max-width: 445px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-family: $font-display;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: $text-color;
+    }
+
+    &__desc {
+        line-height: 28px;
+        color: $title-color;
+    }
+
+
+}
+
+@include breackpoint-down(900px) {
+    .easy {
+        padding-top: 90px;
+        background-image: none;
+        text-align: center;
+    
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__item:first-child {
+            width: 100%;
+            max-width: 1015px;
+            margin-bottom: 90px;
+        }
+    
+        &__item:last-child {
+            width: 100%;
+            max-width: 1106px;
+            flex-direction: column;
+        }
+    
+        &__img-implement {
+            width: 392px;
+            height: 250px;
+        }
+        
+        &__img-phones {
+            width: 363px;
+            height: 320px;
+            
+        }
+    
+        &__item-content {
+            max-width: 573px;
+        }
+    
+    }
+}
+
+@include breackpoint-down(570px) {
+    .easy {
+        padding-bottom: 80px;
+        padding-top: 70px;
+        background-image: none;
+        text-align: center;
+    
+        &__item:first-child {
+            margin: 0 auto;
+            max-width: 328px;
+            margin-bottom: 40px;
+           
+        }
+    
+        &__item:last-child {
+            margin: 0 auto; 
+            max-width: 328px;
+        }
+    
+        &__img-implement {
+            width: 328px;
+            height: 209px;
+        }
+        
+        &__img-phones {
+            width: 328px;
+            height: 290px;
+        }
+    
+        &__item-content {
+            max-width: 328px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: -0.28px;
+        }
+    
+    }
+}
+
+@include breackpoint-down(375px) {
+
+    .easy {
+        &__img-implement {
+            width: 270px;
+            height: 209px;   
+        }
+        
+        &__img-phones {
+            width: 270px;
+            height: 290px;
+        }
+    }
+    
+}
